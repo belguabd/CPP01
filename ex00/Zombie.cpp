@@ -1,6 +1,16 @@
-#include <Zombie.hpp>
+#include "Zombie.hpp"
 
 void Zombie::announce(void)
 {
     std::cout << name << "BraiiiiiiinnnzzzZ...";
 }
+std::string Zombie::getName()
+{
+    return (name);
+}
+
+void Zombie::setName(std::string name)
+{
+    this->name = name;
+}
+
