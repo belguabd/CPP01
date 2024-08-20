@@ -2,7 +2,7 @@ FLAGS=c++ -Wall -Wextra  -Werror
 
 NAME=WEAPON
 
-SRC=main.cpp HumanA.cpp  Weapon.cpp HumanB.cpp
+SRC=main.cpp  Weapon.cpp HumanA.cpp  HumanB.cpp
 
 
 OBJ=$(SRC:.cpp=.o)
@@ -12,7 +12,7 @@ all : $(NAME)
 $(NAME): $(OBJ)
 	$(FLAGS) $(OBJ) -o $(NAME)
 
-%.o : %.cpp 
+%.o : %.cpp HumanB.hpp HumanA.hpp Weapon.hpp
 	$(FLAGS) -c $< -o $@
 
 clean:

@@ -2,12 +2,13 @@
 #include "Weapon.hpp"
 class HumanB
 {
-public:
-    HumanB(std::string name);
-    void setWeapon(Weapon weapon );
-    void attack();
-
 private:
     std::string name;
-    Weapon weapon;
+    Weapon *weapon;
+public:
+    void setWeapon(Weapon &weapon);
+    void attack();
+    HumanB(std::string name);
+    HumanB(std::string name, Weapon &weapon);
+
 };

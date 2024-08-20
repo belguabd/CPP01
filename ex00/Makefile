@@ -2,7 +2,7 @@ FLAGS=c++ -Wall -Wextra  -Werror
 
 NAME=Zombie
 
-SRC=main.cpp Zombie.cpp  randomChump.cpp newZombie.cpp
+SRC=main.cpp Zombie.cpp  randomChump.cpp newZombie.cpp 
 
 
 OBJ=$(SRC:.cpp=.o)
@@ -12,7 +12,7 @@ all : $(NAME)
 $(NAME): $(OBJ)
 	$(FLAGS) $(OBJ) -o $(NAME)
 
-%.o : %.cpp 
+%.o : %.cpp  Zombie.hpp randomChump.hpp newZombie.hpp
 	$(FLAGS) -c $< -o $@
 
 clean:
