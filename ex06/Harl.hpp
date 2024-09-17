@@ -20,5 +20,4 @@ private:
     void printWarning(void);
     void printError(void);
     void printDefault(void);
-    int  getLevel(std::string level);
 };

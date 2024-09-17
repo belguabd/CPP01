@@ -2,9 +2,11 @@
 
 int main()
 {
-    Zombie Z;
+
+    randomChump("HELLO WORLD");
+    
     Zombie *test;
-    test = Z.newZombie("HOME");
-    std::cout << test->getName();
+    test = newZombie("42");
+    test->announce();
     delete test;
 }

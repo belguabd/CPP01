@@ -3,15 +3,16 @@
 
 int main()
 {
+
     Zombie zombie;
     std::string name;
     int N;
-    Zombie *ZombieHorde;
+    Zombie *test;
+
     N = 3;
-    name = "THE WALKING DEAD";
-    ZombieHorde = zombie.ZombieHorde(N, name);
-    ZombieHorde[0].getName();
+    name = "Zombie";
+    test = ZombieHorde(N, name);
     for (int i = 0; i < N; i++)
-        std::cout << ZombieHorde[i].getName() << std::endl;
-    delete[] ZombieHorde;
+        test[i].announce();
+    delete[] test;
 }

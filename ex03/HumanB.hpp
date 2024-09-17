@@ -10,5 +10,4 @@ public:
     void attack();
     HumanB(std::string name);
     HumanB(std::string name, Weapon &weapon);
-
 };

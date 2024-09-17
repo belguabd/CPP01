@@ -5,7 +5,7 @@ class Zombie
 {
 
 public:
-    Zombie *ZombieHorde(int N, std::string name);
+    Zombie();
     std::string getName();
     void setName(std::string name);
     void announce(void);
@@ -13,3 +13,4 @@ public:
 private:
     std::string name;
 };
+Zombie *ZombieHorde(int N, std::string name);

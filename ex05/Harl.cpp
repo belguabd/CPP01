@@ -28,6 +28,7 @@ void Harl::complain(std::string level)
         &Harl::error,
         &Harl::info,
         &Harl::warning};
+    
     for (size_t i = 0; i < levels->size(); i++)
         if (levels[i] == level)
             (this->*ptrToMemberFun[i])();
